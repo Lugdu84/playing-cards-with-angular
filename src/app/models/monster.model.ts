@@ -1,5 +1,9 @@
+import { MonsterType } from '@app/utils/monster.utils';
+
 export class Monster {
   name = 'My Monster';
+  image = 'images/pik.avif';
+  type = MonsterType.ELECTRIC;
   hp = 40;
   figureCaption = 'N°001 Monster';
   attackName = 'Geo Impact';
