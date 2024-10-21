@@ -2,16 +2,16 @@
   <div id="inside">
     <header>
       <div class="left">
-        <div id="name">{{ monster.name }}</div>
+        <div id="name">{{ monster().name }}</div>
       </div>
       <div class="right">
-        <div id="hp">{{ monster.hp }} HP</div>
+        <div id="hp">{{ monster().hp }} HP</div>
         <img src="/images/electric.png" alt="" class="energy-icon" />
       </div>
     </header>
     <figure id="art">
       <img src="/images/pik.avif" alt="" />
-      <figcaption>{{ monster.figureCaption }}</figcaption>
+      <figcaption>{{ monster().figureCaption }}</figcaption>
     </figure>
     <div id="capacities">
       <div class="capacity">
@@ -20,11 +20,11 @@
             <img src="/images/electric.png" alt="" class="energy-icon" />
             <img src="/images/electric.png" alt="" class="energy-icon" />
           </div>
-          <div class="name">{{ monster.attackName }}</div>
-          <div class="damage">{{ monster.attackStrength }}</div>
+          <div class="name">{{ monster().attackName }}</div>
+          <div class="damage">{{ monster().attackStrength }}</div>
         </div>
         <div class="descriptioin">
-          {{ monster.attackDescription }}
+          {{ monster().attackDescription }}
         </div>
       </div>
     </div>
